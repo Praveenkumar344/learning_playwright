@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "playwright test --headed",
-    "headless": "playwright test "
+    "headless": "playwright test ",
+    "cucumber": "cucumber-js  --tags \"not @skip\""
   },
   "keywords": [],
   "author": "",
@@ -16,6 +17,8 @@
     "@types/node": "^25.5.0"
   },
   "dependencies": {
-    "dotenv": "^17.3.1"
+    "@cucumber/cucumber": "^12.7.0",
+    "dotenv": "^17.3.1",
+    "playwright": "^1.58.2"
   }
 }

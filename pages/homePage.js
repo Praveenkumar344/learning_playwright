@@ -7,7 +7,7 @@ constructor(page){
         this.alwaysSignIn=page.locator('#true');
         this.closePopUp=page.locator(".onetrust-close-btn-handler.onetrust-close-btn-ui.banner-close-button.ot-close-icon")
         this.signInButton=page.locator('button:has-text("Sign In")');
-    
+        this.searchresult=page.locator(".large.flex-search-result");
 }
 
 async goto() {
@@ -28,4 +28,4 @@ async search(item){
 
 }
 
-export default HomePage;
+module.exports = HomePage;

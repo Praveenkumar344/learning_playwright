@@ -21,4 +21,4 @@ class SignIn{
   }
   
 }
-export default SignIn;
+module.exports = SignIn;

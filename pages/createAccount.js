@@ -28,5 +28,4 @@ class CreateAccount {
     await this.submitButton.click();
   }
 }
-
-export default CreateAccount ;
+module.exports = CreateAccount;

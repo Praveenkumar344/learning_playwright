@@ -1,0 +1,156 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "home-page-search;search-for-an-item",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Search for an item",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2130945799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "the user is logged in",
+            "match": {
+              "location": "steps\\homePage.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4479990399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "they search for \"bag\"",
+            "match": {
+              "location": "steps\\homePage.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6924672899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "search results should be displayed",
+            "match": {
+              "location": "steps\\homePage.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4903999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2026495299
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "home-page-search",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Home Page Search",
+    "tags": [],
+    "uri": "features\\homePage.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-login;successful-login",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Successful login",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2247107800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "the user is on the sign in page",
+            "match": {
+              "location": "steps\\signIn.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5015540100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "they enter valid credentials",
+            "match": {
+              "location": "steps\\signIn.steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 718310299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "they should be logged in successfully",
+            "match": {
+              "location": "steps\\signIn.steps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6114477900
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1968869899
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User Login",
+    "tags": [],
+    "uri": "features\\signIn.feature"
+  }
+]
