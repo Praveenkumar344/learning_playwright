@@ -1,3 +1,4 @@
+
 Feature: Home Page Search
   Scenario: Search for an item
     Given the user is logged in

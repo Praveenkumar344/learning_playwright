@@ -17,6 +17,8 @@ async goto() {
 async search(item){
     await this.searchBox.fill(item);
     await this.page.keyboard.press("Enter");
+   
+        await this.page.waitForTimeout(10000);
 }
  async signIn(email,password){
     await this.email.fill(email);

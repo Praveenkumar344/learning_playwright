@@ -6,7 +6,7 @@
         "description": "",
         "id": "home-page-search;search-for-an-item",
         "keyword": "Scenario",
-        "line": 2,
+        "line": 3,
         "name": "Search for an item",
         "steps": [
           {
@@ -14,46 +14,46 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2130945799
+              "duration": 1500965100
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 3,
+            "line": 4,
             "name": "the user is logged in",
             "match": {
-              "location": "steps\\homePage.steps.js:7"
+              "location": "steps\\placeOrder.steps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 4479990399
+              "duration": 4783323699
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 4,
+            "line": 5,
             "name": "they search for \"bag\"",
             "match": {
-              "location": "steps\\homePage.steps.js:13"
+              "location": "steps\\placeOrder.steps.js:18"
             },
             "result": {
               "status": "passed",
-              "duration": 6924672899
+              "duration": 14347963100
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 5,
+            "line": 6,
             "name": "search results should be displayed",
             "match": {
-              "location": "steps\\homePage.steps.js:17"
+              "location": "steps\\placeOrder.steps.js:22"
             },
             "result": {
               "status": "passed",
-              "duration": 4903999
+              "duration": 159451000
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2026495299
+              "duration": 1078240099
             }
           }
         ],
@@ -70,11 +70,160 @@
       }
     ],
     "id": "home-page-search",
-    "line": 1,
+    "line": 2,
     "keyword": "Feature",
     "name": "Home Page Search",
     "tags": [],
     "uri": "features\\homePage.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "ordering-bag;ordering-a-bag",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "ordering a bag",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1478552100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "the user is logged in",
+            "match": {
+              "location": "steps\\placeOrder.steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3931080600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "they search for \"bag\"",
+            "match": {
+              "location": "steps\\placeOrder.steps.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14037793900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "search results should be displayed",
+            "match": {
+              "location": "steps\\placeOrder.steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 313592799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user click the first item",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "User should be redirected to the pdp page",
+            "match": {
+              "location": "steps\\placeOrder.steps.js:35"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "user click the user Add to bag",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the item should be added to the bag",
+            "match": {
+              "location": "steps\\placeOrder.steps.js:46"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user goes to the bag",
+            "match": {
+              "location": "steps\\placeOrder.steps.js:55"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user clicks on order now",
+            "match": {
+              "location": "steps\\placeOrder.steps.js:59"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2595351600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "ordering-bag",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "ordering bag",
+    "tags": [],
+    "uri": "features\\placeOrder.feature"
   },
   {
     "description": "",
@@ -91,7 +240,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2247107800
+              "duration": 1542446300
             }
           },
           {
@@ -104,7 +253,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5015540100
+              "duration": 4217076399
             }
           },
           {
@@ -117,7 +266,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 718310299
+              "duration": 765327499
             }
           },
           {
@@ -130,7 +279,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6114477900
+              "duration": 7397632200
             }
           },
           {
@@ -138,7 +287,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1968869899
+              "duration": 1274959999
             }
           }
         ],
