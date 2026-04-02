@@ -5,6 +5,7 @@ const SignIn = require('../pages/signIn');
 let siPage;
 
 Given('the user is on the sign in page', async function () {
+//   new SignIn(this.page).goto();
   siPage = new SignIn(this.page);
   await siPage.goto();
 });

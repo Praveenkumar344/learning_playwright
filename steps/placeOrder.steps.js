@@ -26,10 +26,20 @@ Then('search results should be displayed', async function () {
 //
 // PDP navigation
 //
+// When('user clicks the first item', async function () {
+//   const firstItem = this.page.locator('.large.flex-search-result').first();
+//   await firstItem.click();
+//   pdpPage = new PDP(this.page);
+  
+// });
 When('user clicks the first item', async function () {
-  const firstItem = this.page.locator('.large.flex-search-result').first();
-  await firstItem.click();
-  pdpPage = new PDP(this.page);
+  const [newPage] = await Promise.all([
+    this.page.context().waitForEvent('page'), // wait for new tab
+    this.page.locator('img.picture-image.loaded').nth(2).first().click()
+  ]);
+  await newPage.waitForLoadState();
+  pdpPage = new PDP(newPage);
+  this.page = newPage; // reassign so subsequent steps use the new tab
 });
 
 Then('User should be redirected to the pdp page', async function () {

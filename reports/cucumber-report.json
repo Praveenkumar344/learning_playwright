@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1500965100
+              "duration": 2555369200
             }
           },
           {
@@ -26,8 +26,9 @@
               "location": "steps\\placeOrder.steps.js:12"
             },
             "result": {
-              "status": "passed",
-              "duration": 4783323699
+              "status": "failed",
+              "duration": 30011873799,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\2461397\\OneDrive - Cognizant\\Desktop\\practice_playwright\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
             }
           },
           {
@@ -39,8 +40,8 @@
               "location": "steps\\placeOrder.steps.js:18"
             },
             "result": {
-              "status": "passed",
-              "duration": 14347963100
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -52,8 +53,8 @@
               "location": "steps\\placeOrder.steps.js:22"
             },
             "result": {
-              "status": "passed",
-              "duration": 159451000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -61,7 +62,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1078240099
+              "duration": 1510240200
             }
           }
         ],
@@ -91,7 +92,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1478552100
+              "duration": 1391825600
             }
           },
           {
@@ -104,7 +105,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3931080600
+              "duration": 5960393700
             }
           },
           {
@@ -116,8 +117,9 @@
               "location": "steps\\placeOrder.steps.js:18"
             },
             "result": {
-              "status": "passed",
-              "duration": 14037793900
+              "status": "failed",
+              "duration": 30014589200,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\2461397\\OneDrive - Cognizant\\Desktop\\practice_playwright\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
             }
           },
           {
@@ -129,25 +131,15 @@
               "location": "steps\\placeOrder.steps.js:22"
             },
             "result": {
-              "status": "passed",
-              "duration": 313592799
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
-            "name": "user click the first item",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "User should be redirected to the pdp page",
+            "name": "user clicks the first item",
             "match": {
               "location": "steps\\placeOrder.steps.js:35"
             },
@@ -158,11 +150,27 @@
           },
           {
             "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "User should be redirected to the pdp page",
+            "match": {
+              "location": "steps\\placeOrder.steps.js:45"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
             "keyword": "When ",
             "line": 8,
-            "name": "user click the user Add to bag",
+            "name": "user clicks Add to bag",
+            "match": {
+              "location": "steps\\placeOrder.steps.js:52"
+            },
             "result": {
-              "status": "undefined",
+              "status": "skipped",
               "duration": 0
             }
           },
@@ -172,7 +180,7 @@
             "line": 9,
             "name": "the item should be added to the bag",
             "match": {
-              "location": "steps\\placeOrder.steps.js:46"
+              "location": "steps\\placeOrder.steps.js:56"
             },
             "result": {
               "status": "skipped",
@@ -185,7 +193,7 @@
             "line": 10,
             "name": "user goes to the bag",
             "match": {
-              "location": "steps\\placeOrder.steps.js:55"
+              "location": "steps\\placeOrder.steps.js:65"
             },
             "result": {
               "status": "skipped",
@@ -198,7 +206,7 @@
             "line": 11,
             "name": "user clicks on order now",
             "match": {
-              "location": "steps\\placeOrder.steps.js:59"
+              "location": "steps\\placeOrder.steps.js:69"
             },
             "result": {
               "status": "skipped",
@@ -210,7 +218,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2595351600
+              "duration": 1514156899
             }
           }
         ],
@@ -240,7 +248,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1542446300
+              "duration": 1437066400
             }
           },
           {
@@ -253,7 +261,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4217076399
+              "duration": 341013299
             }
           },
           {
@@ -262,11 +270,12 @@
             "line": 4,
             "name": "they enter valid credentials",
             "match": {
-              "location": "steps\\signIn.steps.js:12"
+              "location": "steps\\signIn.steps.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 765327499
+              "status": "failed",
+              "duration": 1946795100,
+              "error_message": "locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('[type=\"email\"]')\u001b[22m\n\n    at SignIn.signIn (C:\\Users\\2461397\\OneDrive - Cognizant\\Desktop\\practice_playwright\\pages\\signIn.js:16:22)\n    at CustomWorld.<anonymous> (C:\\Users\\2461397\\OneDrive - Cognizant\\Desktop\\practice_playwright\\steps\\signIn.steps.js:14:16)"
             }
           },
           {
@@ -275,11 +284,11 @@
             "line": 5,
             "name": "they should be logged in successfully",
             "match": {
-              "location": "steps\\signIn.steps.js:16"
+              "location": "steps\\signIn.steps.js:17"
             },
             "result": {
-              "status": "passed",
-              "duration": 7397632200
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -287,7 +296,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1274959999
+              "duration": 1994065600
             }
           }
         ],
