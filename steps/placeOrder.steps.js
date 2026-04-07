@@ -2,13 +2,11 @@ const { Given, When, Then } = require('@cucumber/cucumber');
 const { expect } = require('@playwright/test');
 const HomePage = require('../pages/homePage');
 const PDP = require('../pages/pdp');
+const Bag =require('../pages/bag');
 
 let hmPage;
 let pdpPage;
 
-//
-// Login + Search
-//
 Given('the user is logged in', async function () {
   hmPage = new HomePage(this.page);
   await hmPage.goto();
@@ -23,19 +21,12 @@ Then('search results should be displayed', async function () {
   await expect(hmPage.searchresult).toBeVisible();
 });
 
-//
-// PDP navigation
-//
-// When('user clicks the first item', async function () {
-//   const firstItem = this.page.locator('.large.flex-search-result').first();
-//   await firstItem.click();
-//   pdpPage = new PDP(this.page);
-  
-// });
+
 When('user clicks the first item', async function () {
   const [newPage] = await Promise.all([
     this.page.context().waitForEvent('page'), // wait for new tab
-    this.page.locator('img.picture-image.loaded').nth(2).first().click()
+    this.page.locator('.picture-image.loaded').nth(7).first().click()
+    
   ]);
   await newPage.waitForLoadState();
   pdpPage = new PDP(newPage);
@@ -55,24 +46,19 @@ When('user clicks Add to bag', async function () {
 
 Then('the item should be added to the bag', async function () {
   // Adjust locator to whatever confirmation your site shows
-  const confirmation = this.page.locator('.bag-confirmation-message');
+  const confirmation = this.page.locator('.h4.large-11.small-11.medium-11');
   await expect(confirmation).toBeVisible();
 });
 
 //
 // View bag + order
 //
-When('user goes to the bag', async function () {
+When('user goes to the bag page', async function () {
   await pdpPage.viewBag();
 });
 
 Then('user clicks on order now', async function () {
-  // Locator for the "Order Now" button
-  const orderNowButton = this.page.locator(
-    '.primary.button.flex-button-content.align-middle.button.emphasis.expanded.margin-bottom-xs'
-  );
-  await expect(orderNowButton).toHaveText('Order Now');
-  await orderNowButton.click();
+  await Bag.gotoCheckOutPage();
 
   // After clicking, check that "Continue Shopping" button is visible
   const continueShoppingButton = this.page.locator(

@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 2555369200
+              "duration": 2171612799
             }
           },
           {
@@ -23,12 +23,11 @@
             "line": 4,
             "name": "the user is logged in",
             "match": {
-              "location": "steps\\placeOrder.steps.js:12"
+              "location": "steps\\placeOrder.steps.js:10"
             },
             "result": {
-              "status": "failed",
-              "duration": 30011873799,
-              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\2461397\\OneDrive - Cognizant\\Desktop\\practice_playwright\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+              "status": "passed",
+              "duration": 3756130000
             }
           },
           {
@@ -37,11 +36,11 @@
             "line": 5,
             "name": "they search for \"bag\"",
             "match": {
-              "location": "steps\\placeOrder.steps.js:18"
+              "location": "steps\\placeOrder.steps.js:16"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 13205277299
             }
           },
           {
@@ -50,11 +49,11 @@
             "line": 6,
             "name": "search results should be displayed",
             "match": {
-              "location": "steps\\placeOrder.steps.js:22"
+              "location": "steps\\placeOrder.steps.js:20"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 27621299
             }
           },
           {
@@ -62,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1510240200
+              "duration": 2393183999
             }
           }
         ],
@@ -92,7 +91,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1391825600
+              "duration": 1803093800
             }
           },
           {
@@ -101,11 +100,11 @@
             "line": 3,
             "name": "the user is logged in",
             "match": {
-              "location": "steps\\placeOrder.steps.js:12"
+              "location": "steps\\placeOrder.steps.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 5960393700
+              "duration": 4671455600
             }
           },
           {
@@ -114,12 +113,11 @@
             "line": 4,
             "name": "they search for \"bag\"",
             "match": {
-              "location": "steps\\placeOrder.steps.js:18"
+              "location": "steps\\placeOrder.steps.js:16"
             },
             "result": {
-              "status": "failed",
-              "duration": 30014589200,
-              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\2461397\\OneDrive - Cognizant\\Desktop\\practice_playwright\\node_modules\\@cucumber\\cucumber\\lib\\time.js:64:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+              "status": "passed",
+              "duration": 12900580199
             }
           },
           {
@@ -128,11 +126,11 @@
             "line": 5,
             "name": "search results should be displayed",
             "match": {
-              "location": "steps\\placeOrder.steps.js:22"
+              "location": "steps\\placeOrder.steps.js:20"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 19003500
             }
           },
           {
@@ -141,11 +139,11 @@
             "line": 6,
             "name": "user clicks the first item",
             "match": {
-              "location": "steps\\placeOrder.steps.js:35"
+              "location": "steps\\placeOrder.steps.js:25"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 4200235699
             }
           },
           {
@@ -154,11 +152,11 @@
             "line": 7,
             "name": "User should be redirected to the pdp page",
             "match": {
-              "location": "steps\\placeOrder.steps.js:45"
+              "location": "steps\\placeOrder.steps.js:36"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 78181000
             }
           },
           {
@@ -167,11 +165,11 @@
             "line": 8,
             "name": "user clicks Add to bag",
             "match": {
-              "location": "steps\\placeOrder.steps.js:52"
+              "location": "steps\\placeOrder.steps.js:43"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 63565699
             }
           },
           {
@@ -180,24 +178,24 @@
             "line": 9,
             "name": "the item should be added to the bag",
             "match": {
-              "location": "steps\\placeOrder.steps.js:56"
+              "location": "steps\\placeOrder.steps.js:47"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2452301699
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 10,
-            "name": "user goes to the bag",
+            "name": "user goes to the bag page",
             "match": {
-              "location": "steps\\placeOrder.steps.js:65"
+              "location": "steps\\placeOrder.steps.js:56"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 835914100
             }
           },
           {
@@ -206,11 +204,12 @@
             "line": 11,
             "name": "user clicks on order now",
             "match": {
-              "location": "steps\\placeOrder.steps.js:69"
+              "location": "steps\\placeOrder.steps.js:60"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "failed",
+              "duration": 700300,
+              "error_message": "TypeError: Bag.gotoCheckOutPage is not a function\n    at CustomWorld.<anonymous> (C:\\Users\\2461397\\OneDrive - Cognizant\\Desktop\\practice_playwright\\steps\\placeOrder.steps.js:61:13)"
             }
           },
           {
@@ -218,7 +217,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1514156899
+              "duration": 1918439200
             }
           }
         ],
@@ -248,7 +247,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1437066400
+              "duration": 1856497600
             }
           },
           {
@@ -261,7 +260,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 341013299
+              "duration": 2451829000
             }
           },
           {
@@ -273,9 +272,8 @@
               "location": "steps\\signIn.steps.js:13"
             },
             "result": {
-              "status": "failed",
-              "duration": 1946795100,
-              "error_message": "locator.fill: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for locator('[type=\"email\"]')\u001b[22m\n\n    at SignIn.signIn (C:\\Users\\2461397\\OneDrive - Cognizant\\Desktop\\practice_playwright\\pages\\signIn.js:16:22)\n    at CustomWorld.<anonymous> (C:\\Users\\2461397\\OneDrive - Cognizant\\Desktop\\practice_playwright\\steps\\signIn.steps.js:14:16)"
+              "status": "passed",
+              "duration": 676561400
             }
           },
           {
@@ -287,8 +285,8 @@
               "location": "steps\\signIn.steps.js:17"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 4625932099
             }
           },
           {
@@ -296,7 +294,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1994065600
+              "duration": 1573551899
             }
           }
         ],

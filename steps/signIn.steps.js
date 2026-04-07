@@ -15,6 +15,6 @@ When('they enter valid credentials', async function () {
 });
 
 Then('they should be logged in successfully', async function () {
-  await expect(this.page.locator('span.grid-x.heavy-sm').nth(0)).toHaveText('Hi, John', { timeout: 15000 });
+  await expect(this.page.locator('.heavy-sm.relative.info-row-1').nth(0)).toHaveText('Hi, john', { timeout: 15000 });
 
 });

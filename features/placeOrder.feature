@@ -7,5 +7,5 @@ Feature: ordering bag
     Then User should be redirected to the pdp page
     When user clicks Add to bag 
     Then the item should be added to the bag
-    When user goes to the bag
+    When user goes to the bag page
     Then user clicks on order now

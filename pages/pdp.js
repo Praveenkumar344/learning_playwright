@@ -14,9 +14,6 @@ async addTOBag(item){
 async viewBag(item){
    await this.viewBagLocator.click();
   }
-async viewBag(item){
-   await this.addToBagLocator.click();
-  }
 }
 
 module.exports = pdp;
